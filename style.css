@@ -3,12 +3,16 @@
   src: url("font.ttf");
 }
 
-* {
-  font-family: font;
+main h1 h2 {
+  color: #c4ae08;
+}
+
+main p {
+  color: white;
 }
 
 h1 {
-  font-size: 32;
+  font-size: 40;
 }
 
 h2 {
@@ -17,4 +21,170 @@ h2 {
 
 p {
   font-size: 16;
+  font-family: serif;
 }
+
+#kontaktlogga img {
+  width: 50vw;
+  height: 60vh;
+}
+
+* {
+  text-align: center;
+  font-family: font;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#loggaett {
+}
+
+#loggatva {
+}
+
+iframe {
+  margin: 20px;
+}
+
+#slagfaltdel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#trupperdel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.trupper-container img {
+  width: 20vw;
+  height: 50vh;
+}
+
+.slagfalt-container img {
+  width: 40vw;
+  height: 50vh;
+}
+
+#narva {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#fraustadt {
+  grid-area: 1 / 2 / 2 / 3;
+}
+#lesna {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#poltava {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+main {
+  min-height: 100vh; /*minimum för mains höjd är 100% av skärmens höjd*/
+  background-color: #002768;
+  padding: 1px;
+}
+
+header {
+  /*Headern som är likadan på alla sidor*/
+  padding: 8px; /*Sätter en gräns precis utanför innehållet, eftersom: Margin, Border, Padding, Content*/
+  background-color: black; /*Bakgrundsfärg*/
+  background-color: #c4ae08;
+}
+
+header nav {
+  /*Specifika flexbox inställningar för alla nav-element*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  /* gap: 1rem;*/
+  /*list-style: none;*/
+}
+
+a:hover {
+  color: grey;
+  transition: 0.2s ease-in-out;
+}
+
+header nav a {
+  /*mellanrum mellan nav-länkarna*/
+  /*padding: 10px;*/
+  font-size: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-decoration: none; /*Ta bort all styling från texten*/
+}
+
+#länkar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#loggaett {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#loggatva {
+  grid-area: 1 / 3 / 2 / 4;
+}
+#länkar {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+footer {
+  /*Footern som är likadan på alla sidor*/
+  padding: 8px;
+  background-color: black;
+}
+
+#indexdel {
+  /*inledning*/
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 1%;
+  background-color: rgba(177, 177, 177, 0.9);
+  font-size: 21px;
+}
+
+#indexdel div {
+  /*inledningens ram*/
+  border: 5px solid black;
+  border-style: dotted;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*
+
+
+
+#konstverkbody img:hover {
+  transform: scale(1.05);
+}
+*/
