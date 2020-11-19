@@ -6,100 +6,95 @@
 * {
   font-family: font;
   margin: 0px;
+  color: #c4ae08;
 }
 
-/*SETTINGS FOR TEXT:*/
-
 h1 {
-  font-size: 40px;
+  font-size: max(6vw, 80px);
   text-align: center;
-  color: #c4ae08;
+  color: #c4ae08; /*947e00*/
+  -webkit-text-stroke: 1px #000000;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: max(2.2vw, 44px);
   text-align: center;
   color: #c4ae08;
+  -webkit-text-stroke: 1px #000000;
 }
 
 p {
-  font-size: 21px;
+  font-size: max(2vw, 35px);
   text-align: center;
   font-family: serif;
+  color: #c4ae08;
+  -webkit-text-stroke: 0.5px #000000;
 }
 
-/*General settings*/
+a {
+  font-size: max(3vw, 10px);
+  text-decoration: none; /* no underline */
+  -webkit-text-stroke: 1px #000000;
+}
 
 main {
+  padding-top: 2em;
+  padding-bottom: 2em;
   min-height: 100vh; /*minimum för mains höjd är 100% av skärmens höjd*/
-  background-color: #002768;
-  padding: 1px;
+  background-image: url("bilder/slaget-vid-narva-3-svartvit.jpg"),
+    url("slaget-vid-narva-3.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 header {
-  color: #002768;
-  background-color: #c4ae08;
+  padding: 1.5vw;
+  border: solid#c4ae08 5px;
+  background-image: url("bilder/konungens-likfärd-2.jpg");
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 footer {
-  padding: 8px;
+  padding: 2em;
+  background-color: rgb(1, 16, 48);
+  border: solid#c4ae08 5px;
   color: #c4ae08;
-  background-color: black;
+  background-image: url("bilder/konungens-likfärd-2.jpg");
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
-
-/*Delar av varje sida*/
 
 #indexdel {
   /*inledning*/
-  margin-top: 4%;
-  margin-bottom: 4%;
-  margin-left: 30%;
-  margin-right: 30%;
-  padding: 1%;
-  background-color: #c4ae08;
+  min-width: 280px;
+  width: 40vw;
+  border: solid#c4ae08 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding: 2em;
+  /*  background-color: #8d8d8d; 0,95 opacity*/
+  background-image: url("bilder/sten-2.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-#trailer-box {
-  /*inledningens ram*/
-  border: 5px solid black;
-  border-style: dotted;
-  padding-left: 20px;
-  padding-right: 20px;
+#indexdel img {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
 }
 
-#slagfaltdel {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-#trupperdel {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-#beskrivningdel {
-  color: white;
-}
-
-/*Gemensamma sidinställningar*/
-
-#länkar {
+#lankar {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#länkar a {
-  /*mellanrum mellan nav-länkarna*/
-  /*padding: 10px;*/
-  text-decoration: none; /*Ta bort all styling från texten*/
-  font-size: 25px;
+#lankar a {
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
@@ -114,11 +109,13 @@ header nav {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  max-width: 100%;
+  max-height: 50px;
 }
 
 /*Postitioner för alla element under nav-gridden*/
 
-#länkar {
+#lankar {
   grid-area: 1 / 2 / 2 / 3;
 }
 
@@ -129,34 +126,97 @@ header nav {
   grid-area: 1 / 3 / 2 / 4;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
+/*
+
+  #trupperdel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  */
+
 #kontaktlogga img {
-  width: 50vw;
-  height: 60vh;
+  min-width: 300px;
+  width: 25vw;
+  height: auto;
 }
 
 body {
   padding: 0;
 }
 
+#slagfaltdel,
+#trupperdel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2vw;
+  margin: 1vw;
+  font-size: max(1.5vw, 20px);
+}
+
+.slagfalt-container,
+.trupper-container {
+  min-width: 150px;
+  border: solid#c4ae08 5px;
+  padding: 2em;
+  background-image: url("bilder/sten-2.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 .trupper-container img {
-  width: 20vw;
-  height: 50vh;
-}
-
-.slagfalt-container img {
-  width: 40vw;
+  width: 80%;
   height: auto;
+  margin-top: 1em;
 }
 
-#narva {
-  grid-area: 1 / 1 / 2 / 2;
+.aside-area {
+  position: fixed;
+  top: 3vw;
+  left: 3vw;
+  font-size: 3rem;
 }
-#fraustadt {
-  grid-area: 1 / 2 / 2 / 3;
+
+aside {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  transition: 600ms ease-in-out;
+  background-color: white;
 }
-#lesna {
-  grid-area: 2 / 1 / 3 / 2;
+
+aside ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
 }
-#poltava {
-  grid-area: 2 / 2 / 3 / 3;
+
+aside a {
+  font-size: 3rem;
+  transition: filter 600ms ease-out;
+}
+
+.aside-toggle {
+  display: none;
+}
+
+.aside-toggle:checked + aside {
+  left: 0;
 }
