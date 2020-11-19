@@ -88,13 +88,13 @@ footer {
   padding-bottom: 0.5em;
 }
 
-#lankar {
+#stor-meny #lankar {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#lankar a {
+#stor-meny #lankar a {
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 4px;
@@ -103,7 +103,7 @@ footer {
 
 /*Nav-gridden*/
 
-header nav {
+header nav #stor-meny {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 1fr;
@@ -119,10 +119,10 @@ header nav {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-#logga-1 {
+#stor-meny #logga-1 {
   grid-area: 1 / 1 / 2 / 2;
 }
-#logga-2 {
+#stor-meny #logga-2 {
   grid-area: 1 / 3 / 2 / 4;
 }
 
@@ -184,9 +184,9 @@ body {
 
 .aside-area {
   position: fixed;
-  top: 3vw;
-  left: 3vw;
-  font-size: 3rem;
+  top: 1vw;
+  left: 1vw;
+  font-size: 2rem;
 }
 
 aside {
@@ -219,4 +219,16 @@ aside a {
 
 .aside-toggle:checked + aside {
   left: 0;
+}
+
+@media (max-width: 1000px) {
+  #stor-meny {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aside-area {
+    display: none !important;
+  }
 }
