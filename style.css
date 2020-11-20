@@ -85,13 +85,13 @@ footer {
 }
 
 #indexdel {
-  min-width: 280px;
+  min-width: 250px;
   width: 40vw;
   border: solid#c4ae08 5px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
-  padding: 2em;
+  padding: 1.5em;
   background-image: url("bilder/sten-2.jpg");
   background-position: center;
   background-size: cover;
