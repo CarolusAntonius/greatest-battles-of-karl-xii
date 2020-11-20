@@ -31,7 +31,7 @@ h3 {
 }
 
 p {
-  font-size: max(2vw, 35px);
+  font-size: max(2vw, 30px);
   text-align: center;
   font-family: serif;
   color: #c4ae08;
@@ -51,6 +51,7 @@ a:hover {
 
 #trupperdel img:hover {
   transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(196, 174, 8, 0.3);
 }
 
 main {
@@ -103,6 +104,7 @@ header nav #stor-meny {
   grid-row-gap: 0px;
   max-width: 100%;
   max-height: 50px;
+  text-align: center;
 }
 
 #lankar {
@@ -180,7 +182,7 @@ aside ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: left;
   height: 100%;
 }
 
