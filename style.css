@@ -1,6 +1,7 @@
 @font-face {
   font-family: font;
   src: url("font.ttf");
+  font-display: swap;
 }
 
 * {
@@ -96,6 +97,11 @@ footer {
   background-position: center;
   background-size: cover;
 }
+
+#indexdel p{
+  padding-top: 1.5vw;
+}
+
 header nav #stor-meny {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
