@@ -13,21 +13,18 @@
 h1 {
   font-size: max(6vw, 60px);
   text-align: center;
-  color: #c4ae08; /*947e00*/
   -webkit-text-stroke: 1px #000000;
 }
 
 h2 {
   font-size: max(2.2vw, 44px);
   text-align: center;
-  color: #c4ae08;
   -webkit-text-stroke: 1px #000000;
 }
 
 h3 {
   font-size: max(3vw, 30px);
   text-align: center;
-  color: #c4ae08;
   -webkit-text-stroke: 1px #000000;
 }
 
@@ -35,7 +32,6 @@ p {
   font-size: max(2vw, 30px);
   text-align: center;
   font-family: serif;
-  color: #c4ae08;
   -webkit-text-stroke: 0.5px #000000;
 }
 
@@ -78,7 +74,6 @@ footer {
   padding: 2em;
   background-color: rgb(1, 16, 48);
   border: solid#c4ae08 5px;
-  color: #c4ae08;
   background-image: url("bilder/konungens-likfard-2.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -98,11 +93,11 @@ footer {
   background-size: cover;
 }
 
-#indexdel p{
+#indexdel p {
   padding-top: 1.5vw;
 }
 
-header nav #stor-meny {
+#stor-meny {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 1fr;
@@ -179,8 +174,8 @@ aside {
   height: 100vh;
   transition: 600ms ease-in-out;
   background-image: url("bilder/sten-2.jpg");
-  background-position: center; /* Center the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  background-size: cover;
 }
 
 aside ul {
