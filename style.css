@@ -127,12 +127,6 @@ img {
   height: auto;
 }
 
-#kontaktlogga img {
-  min-width: 300px;
-  width: 25vw;
-  height: auto;
-}
-
 #slagfaltdel,
 #trupperdel {
   display: grid;
@@ -194,10 +188,6 @@ aside a {
 
 .aside-toggle {
   display: none;
-}
-
-.aside-toggle:checked + aside {
-  left: 0;
 }
 
 @media (max-width: 881px) {
