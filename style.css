@@ -207,3 +207,7 @@ aside a {
     display: none !important;
   }
 }
+
+.aside-toggle:checked + aside {
+  left: 0;
+}
